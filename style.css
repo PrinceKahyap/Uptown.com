@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+:root{
+    --pink-bg: #e86ed0;
+    --black-color: rgba(0, 0, 0, 0.8);
+    --Grey-background: rgba(0, 0, 0, 0.02);
+    --dark-black-color: rgba(0, 0, 0, 0.8);
+    --light-color: #b3b3b3;
+}
+
+/* -------- Global-classes --------- */
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* -------- /Global-classes --------- */
+
+/* -------- Header-Style --------- */
+header{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /* background-color: #ffffff; */
+    /* border-bottom: 1px solid rgba(0,0,0,0.2); */
+}
+.logo a{
+    font-size: 20px;
+    font-weight: 800;
+    color: #000;
+}
+.navbar{
+    max-width: 1225px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.nav-menu li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.nav-menu a{
+    color: var(--dark-color);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+.nav-menu a:hover,
+.nav-menu a.active{
+    color: var(--pink-bg);
+}
+/* -------- /Header-Style --------- */
+
+/* -------- Hero-Style --------- */
+.hero{
+    position: relative;
+    background-image: linear-gradient(to bottom, white 0%, white 3%, rgba(255, 255, 255, 0) 54%, rgba(255, 255, 255, 0) 100%),url(/images/bg_1.jpg);
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+}
+/* -------- /Hero-Style --------- */
